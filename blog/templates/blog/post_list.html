@@ -11,6 +11,13 @@
       <h2><a href="https:\\lilothiglo.pythonanywhere.com">Good to see</a></h1>
       <p>It a page of the beneficial of living in a place and thinking and acting as a responsibly person of the globe</p>
     </div>
+    {% for post in posts %}
+    <div>
+      <p>published: {{ post.published_date }}</p>
+      <h1><a href="">{{post.title}}</a></h1>
+      <p>{{post.text|linebreaksbr}}</p>
+    {% endfor %}
+    </div>
   </body>
   <p>Hi there!</p>
   <p>Vajon működik?</p>
